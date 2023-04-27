@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+/* #d4abfb */
+@charset "utf-8";
+html,body {background: #fff;}
+* {color:#333; margin: 0; padding: 0; box-sizing: border-box; font-family: 'Gowun Batang', serif;}
+a {text-decoration: none;}
+li {list-style: none;}
+header {
+    width: 1200px; height: 100px;  margin: 0 auto; 
+    /* 정해진 값 먼저 주기 */
+    display: flex; justify-content: space-between; align-items: center; 
+}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header nav {margin-right: 20px;}
+header nav > ul {display: flex;}
+header nav > ul > li {
+    position: relative;
+}
+header nav > ul > li > a {
+    display: block; width: 150px; text-align: center;
+    line-height: 40px; 
+    /* background-color:#d4abfb; */
+}
+header nav > ul > li > .sub 
+{
+position: absolute; background-color: #fff; width: 100%;
+}
+header nav > ul > li > .sub li {}
+header nav > ul > li > .sub li a {
+    display: block; line-height: 30px; text-align: center;
+}
+/* main */
+main {width: 1200px;  margin: 0 auto; }
+/* 전체 너비 설정 */
+/* main-slide */
+main #slide_wrap {height: 300px;}
+main #slide_wrap #slide_container {}
+main #slide_wrap #slide_container .slide {display: none;}
+main #slide_wrap #slide_container .slide img {}
+main #slide_wrap #slide_container .slide1 {display: block;}
+main #slide_wrap #slide_container .slide2 {}
+main #slide_wrap #slide_container .slide3 {}
+/* main-container */
+main .container {
+    display: flex;/*  text-align: left; */ /* height: 200px;  */
+    margin-top: 5px;
+    }
+main .container > * {width: 400px; height: 200px;}
+main .container .tab_wrap {}
+main .container .tab_wrap .title {
+    display: flex;
+    /* flex-flow: row nowrap; */
+}
+main .container .tab_wrap .title a {
+/*     width: 100px; display: block; text-align: center;
+    background-color: #d4abfb; padding: 5px;
+    border: 1px solid #000; */
+    width: 100px; line-height: 40px; background: #eee;
+    text-align: center;
+}
+main .container .tab_wrap .title .active {background: #d4abfb; color: #fff;}
+main .container .tab_wrap .notice {}
+main .container .tab_wrap .notice a 
+{
+    display: block; padding: 7px 0; 
+    border-bottom:1px solid #aaa;
+} 
+main .container .tab_wrap .gallery {
+    display: flex; justify-content:space-between;
+}
+main .container .tab_wrap .gallery a {margin: 5px;}
+main .container .tab_wrap .gallery a img {width: 100%;}
+main .container .bnr {}
+main .container .bnr img {}
+main .container .link {}
+main .container .link img {}
+/* footer */
+footer {
+    width: 1200px;  margin: 0 auto; height: 100px;
+    display: flex; justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+footer .f_logo {}
+footer .f_logo img {}
+footer p {}
+footer .sns {}
+footer .sns a {}
+/* popup */
+#popup {
+    position: fixed; top: 40%; left: 50%;
+    /* 고정되어 있으니까 fixed 넣어주기 */
+    transform: translate(-50%, -50%);
+    width: 500px; height: 400px;
+    background-color: #fff;
+    padding: 10px; z-index: 999;
+    border: 1px solid #333;
+}
+#popup h1 {margin-bottom: 20px;}
+#popup p {line-height: 2; font-size: 1.5rem;}
+#popup a {
+    position: absolute; bottom: 10px; right: 10px;
+    background: #d4abfb; padding: 20px;
+}
