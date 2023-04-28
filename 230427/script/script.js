@@ -45,3 +45,35 @@ $('.tab_wrap .title a:last-child').on('click',()=>{
 
 // css('dispaly','flex') 이건 show가 블록이 기본값이라,
 //혹시나 flex로 하고 깨지면 요걸로 바꿔사용
+
+
+//slide 
+//위 -> 아래 또는 아래 > 위
+//3초 간격
+//마지막 이미지 -> 첫번째 이미지
+//자동시작
+
+
+//세로 슬라이드
+// let count = 0 
+// setInterval(()=>{
+//     count++ //1부터 시작하니까 바로 증가시키고
+//     if(count>2){count=0} // = 카운트가 2보다 클때 0으로 바꿔라 
+//     console.log(count) //1,2,0,1,2,0,1....
+//     //$(대상).css('속성','값')
+//     $('#slide_container').css('transform',`translateY(-${count*300}px)`)
+// },3000) //매초마다 반복
+
+
+
+
+
+//가로 슬라이드
+let count = 0 
+setInterval(()=>{
+    count++ //1부터 시작하니까 바로 증가시키고
+    if(count>2){count=0} // = 카운트가 2보다 클때 0으로 바꿔라 
+    console.log(count) //1,2,0,1,2,0,1....
+    //$(대상).css('속성','값')
+    $('#slide_container').css('transform',`translateX(-${count*1200}px)`)
+},3000) //매초마다 반복

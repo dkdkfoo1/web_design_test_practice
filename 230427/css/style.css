@@ -35,11 +35,11 @@ header nav > ul > li > .sub li a {
 main {width: 1200px;  margin: 0 auto; }
 /* 전체 너비 설정 */
 /* main-slide */
-main #slide_wrap {height: 300px;}
-main #slide_wrap #slide_container {}
-main #slide_wrap #slide_container .slide {display: none;}
+main #slide_wrap { height: 300px; overflow: hidden;}
+main #slide_wrap #slide_container {display: flex; transition: all 2s;}
+main #slide_wrap #slide_container .slide {}
 main #slide_wrap #slide_container .slide img {}
-main #slide_wrap #slide_container .slide1 {display: block;}
+main #slide_wrap #slide_container .slide1 {}
 main #slide_wrap #slide_container .slide2 {}
 main #slide_wrap #slide_container .slide3 {}
 /* main-container */
